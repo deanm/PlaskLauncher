@@ -1,0 +1,9 @@
+PlaskLauncher is a small app that launches Plask apps with a JavaScript file is
+dropped on its dock icon or via File -> Open.
+
+The build expects to have a plask project at ../plask, which a relase build
+built.  It will copy Plask.app into the PlaskLauncher.app bundle.
+
+Released under the BSD license.
+
+(c) 2010, Dean McNamee <dean@gmail.com>

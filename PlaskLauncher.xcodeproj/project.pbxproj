@@ -15,10 +15,12 @@
 		8D15AC320486D014006FF6A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A37F4B0FDCFA73011CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D15AC340486D014006FF6A4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A7FEA54F5311CA2CBB /* Cocoa.framework */; };
 		C52139E7133CC79600D357EF /* PlaskLauncherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52139E6133CC79600D357EF /* PlaskLauncherAppDelegate.m */; };
+		C524322213FBC5F200B97C84 /* OutputWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C524322013FBC5F100B97C84 /* OutputWindow.xib */; };
 		C5448055133CCEE20074124E /* plask.js in Sources */ = {isa = PBXBuildFile; fileRef = C5448054133CCEE20074124E /* plask.js */; };
 		C5448056133CCEE50074124E /* plask.js in CopyFiles */ = {isa = PBXBuildFile; fileRef = C5448054133CCEE20074124E /* plask.js */; };
 		C5448063133CCFC20074124E /* Plask.app in Resources */ = {isa = PBXBuildFile; fileRef = C5448038133CCDD50074124E /* Plask.app */; };
 		C544807B133CD6E50074124E /* PlaskLauncher.icns in Resources */ = {isa = PBXBuildFile; fileRef = C544807A133CD6E50074124E /* PlaskLauncher.icns */; };
+		C56F263113FAFCAF00A8B17D /* OutputWindowController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C56F263013FAFCAF00A8B17D /* OutputWindowController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,9 +53,12 @@
 		8D15AC370486D014006FF6A4 /* PlaskLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlaskLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52139E5133CC79600D357EF /* PlaskLauncherAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaskLauncherAppDelegate.h; sourceTree = "<group>"; };
 		C52139E6133CC79600D357EF /* PlaskLauncherAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaskLauncherAppDelegate.m; sourceTree = "<group>"; };
+		C524322113FBC5F100B97C84 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/OutputWindow.xib; sourceTree = "<group>"; };
 		C5448038133CCDD50074124E /* Plask.app */ = {isa = PBXFileReference; lastKnownFileType = wrapper.application; name = Plask.app; path = ../plask/build/Release/Plask.app; sourceTree = SOURCE_ROOT; };
 		C5448054133CCEE20074124E /* plask.js */ = {isa = PBXFileReference; explicitFileType = file; fileEncoding = 4; name = plask.js; path = ../plask/plask.js; sourceTree = SOURCE_ROOT; };
 		C544807A133CD6E50074124E /* PlaskLauncher.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PlaskLauncher.icns; sourceTree = "<group>"; };
+		C56F262F13FAFCAF00A8B17D /* OutputWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OutputWindowController.h; sourceTree = "<group>"; };
+		C56F263013FAFCAF00A8B17D /* OutputWindowController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OutputWindowController.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +115,8 @@
 		2A37F4ABFDCFA73011CA2CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C56F262F13FAFCAF00A8B17D /* OutputWindowController.h */,
+				C56F263013FAFCAF00A8B17D /* OutputWindowController.mm */,
 				C52139E5133CC79600D357EF /* PlaskLauncherAppDelegate.h */,
 				C52139E6133CC79600D357EF /* PlaskLauncherAppDelegate.m */,
 				2A37F4AEFDCFA73011CA2CEA /* MyDocument.h */,
@@ -135,6 +142,7 @@
 				C544807A133CD6E50074124E /* PlaskLauncher.icns */,
 				8D15AC360486D014006FF6A4 /* PlaskLauncher-Info.plist */,
 				089C165FFE840EACC02AAC07 /* InfoPlist.strings */,
+				C524322013FBC5F100B97C84 /* OutputWindow.xib */,
 				1DDD58280DA1D0D100B32029 /* MyDocument.xib */,
 				1DDD582A0DA1D0D100B32029 /* MainMenu.xib */,
 			);
@@ -207,6 +215,7 @@
 				1DDD582C0DA1D0D100B32029 /* MyDocument.xib in Resources */,
 				1DDD582D0DA1D0D100B32029 /* MainMenu.xib in Resources */,
 				C544807B133CD6E50074124E /* PlaskLauncher.icns in Resources */,
+				C524322213FBC5F200B97C84 /* OutputWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +230,7 @@
 				8D15AC320486D014006FF6A4 /* main.m in Sources */,
 				C52139E7133CC79600D357EF /* PlaskLauncherAppDelegate.m in Sources */,
 				C5448055133CCEE20074124E /* plask.js in Sources */,
+				C56F263113FAFCAF00A8B17D /* OutputWindowController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +267,14 @@
 				2A37F4BAFDCFA73011CA2CEA /* English */,
 			);
 			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C524322013FBC5F100B97C84 /* OutputWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C524322113FBC5F100B97C84 /* English */,
+			);
+			name = OutputWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

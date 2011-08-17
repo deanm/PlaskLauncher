@@ -20,14 +20,22 @@
 // IN THE SOFTWARE.
 
 #import "PlaskLauncherAppDelegate.h"
+#import "OutputWindowController.h"
 
 extern BOOL g_launched_document;
 
 @implementation PlaskLauncherAppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+-(void)applicationDidFinishLaunching:(NSNotification *)aNotification {
   if (g_launched_document == YES)
     [NSApp terminate:nil];
+}
+
+-(IBAction)showOutputWindow:(id)sender {
+  // Could cache this, but maybe it's easier to create a new one every time.
+  [output_window_controller_ release];
+  output_window_controller_ = [[OutputWindowController alloc] init];
+  [output_window_controller_ showWindow:nil];
 }
 
 @end

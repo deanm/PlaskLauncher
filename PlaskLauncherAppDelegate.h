@@ -21,7 +21,13 @@
 
 #import <Cocoa/Cocoa.h>
 
+@class OutputWindowController;
+
 @interface PlaskLauncherAppDelegate : NSObject <NSApplicationDelegate> {
+  // This isn't really the right place for this, but it's convenient.
+  OutputWindowController* output_window_controller_;
 }
+
+-(IBAction)showOutputWindow:(id)sender;
 
 @end

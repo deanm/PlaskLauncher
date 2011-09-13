@@ -92,6 +92,8 @@ NSTextView* g_output_text_view = nil;
 
   // TODO(deanm): Yeah, probably shouldn't leak the task.
 
+  [self noteNewRecentDocumentURL:abs_url];  // Populate Open Recent menu.
+
   return [[[MyDocument alloc] init] autorelease];
 }
 
